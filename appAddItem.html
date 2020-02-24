@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Add a new item</title>
+<script></script>
+</head>
+<body>  
+	<div>
+	<a href="appMainMenu.html">Main Menu</a>
+	<a href="appAddItem.html">Add a new item</a>
+	<a href="">View Valuation Progress</a>
+	<a href="appViewValue.html.php">View Value</a>
+	</div>
+
+	<form class="" action="appAddItem.php" onsubmit="return confirm('Are you sure you want to add this item?')" method="post" autocomplete="off">
+	<h1 class="">Add a new item</h1>
+	
+	<div>
+	<label class="" for="itemCategory">Item Category</label>
+	<input type="text" name="itemCategory" id="itemCategory" pattern="[a-zA-Z\.\s\,]+" title="Can consist of letters" placeholder="Jewellery, Collectable, etc." required /><br><br>
+	<label class="" for="itemType">Item Type</label>
+	<input type="text" name="itemType" id="itemType" pattern="[a-zA-Z\.\s\,]+" title="Can consist of letters" placeholder="ring, earrings, bracelet, etc." required /><br><br>
+	<label class="" for="itemMaterial">Item Material</label>
+	<input type="text" name="itemMaterial" id="itemMaterial" pattern="[a-zA-Z\.\s\,]+" title="Can consist of letters" placeholder="9ct gold, 18ct gold, sterling silver, etc." required /><br><br>
+	<label class="" for="itemAccessory">Item Accessory</label>
+	<input type="text" name="itemAccessory" id="itemAccessory" pattern="[a-zA-Z\.\s\,]+" title="Can consist of letters" placeholder="ruby, diamond, N/A, etc." required /><br><br>
+	</div>
+	
+	<div>
+	<input type="submit" value="Save Details" name="submit"/>
+	<input type="reset" value="Clear Details" name="reset"/>
+	</div>
+	</form>
+</body>
+</html>
+	

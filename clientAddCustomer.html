@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Add a new customer</title>
+<script></script>
+</head>
+
+<body>
+	<a href="clientMainMenu.html">Main Menu</a>	
+	<br>
+	<a href="clientAddValuator.html">Add a new valuator</a>
+	<br>
+	<a href="">View Previous Valuations</a>
+	<br>
+	<a href="">Logout</a>	
+	
+	<form class="" action="clientAddCustomer.php" onsubmit="return confirm('Are you sure you want to add this customer?')" method="POST">
+	<h1 class="">Add a new Customer</h1>
+	
+	<div class="">
+	<label class="" for="firstName">First name</label>
+	<input type="text" name="firstName" id="firstName" pattern="[a-zA-Z\.\s\,]+" title="Can consist of letters" required /><br><br>
+	
+	<label class="" for="lastName">Surname</label>
+	<input type="text" name="lastName" id="lastName" pattern="[a-zA-Z\.\s\,]+" title="Can consist of letters" required /><br><br>
+	
+	<label class="" for="age">Age</label>
+	<input type="text" name="age" id="age" pattern="[0-9\.\s\,]+" title="Can consist of numbers" required /><br><br>
+	
+	<label class="" for="address">Address</label>
+	<input type="textbox" name="address" id="address" pattern="[a-zA-Z0-9\.\s\,]+" title="Can consist of letters and numbers" required /><br><br>
+	
+	<label class="" for="phoneNo">Phone number</label>
+	<input type="text" name="phoneNo" id="phoneNo" pattern="[0-9. ()/\-]{1,20}" title="Can consist of numbers and /\- and space " required /><br><br>
+	
+	<label class="" for="loginName">Customer login name</label>
+	<input type="text" name="loginName" id="loginName" pattern="[a-zA-Z0-9\.\s\,]+" title="Can consist of letters and numbers" required /><br><br>
+	
+	<label class="" for="password">Customer password</label>
+	<input type="text" name="password" id="password" pattern="[a-zA-Z0-9\.\s\,]+" title="Can consist of letters and numbers" required /><br><br>
+	
+	<label class="" for="policyType">Type of policy</label>
+	<input type="text" name="policyType" id="policyType" pattern="[a-zA-Z0-9\.\s\,]+" title="Can consist of letters and numbers" required /><br><br>
+	
+	<label class="" for="discount">Discount</label>
+	<input type="text" name="discount" id="discount" pattern="[a-zA-Z0-9\.\s\,]+" title="Can consist of letters and numbers" required /><br><br>
+	
+	<label class="" for="email">Customer email</label>
+	<input type="text" name="email" id="email" placeholder="someone@example.com" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}" required /><br><br>
+	
+	<label class="" for="insurancePremium">Insurance premium</label>
+	<input type="text" name="insurancePremium" id="insurancePremium" pattern="[0-9\.\s\,]+" title="Can consist of numbers" required /><br><br>	
+	</div>
+	
+	<div class="">
+	<input type="submit" value="Save details" name="submit"/>
+	<input type="reset" value="Clear details" name="reset"/>
+	</div>
+	</form>
+	
+</body>
+</html>	
